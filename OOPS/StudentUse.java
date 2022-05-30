@@ -1,9 +1,9 @@
 package OOPS;
 
 public class StudentUse {
-    public static void main(String[] args) {
+    public static void main(String[] args) throws Exception {
 
-        Student s1=new Student();
+        Student s1=new Student("mohit",20);
 //        s1.age=20;
 //        s1.name="muskan";
 

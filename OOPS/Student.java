@@ -5,6 +5,18 @@ public class Student {
     private int age;
     private String name;
 
+    final int MAX_STUDENTS;
+
+    public Student() {
+   MAX_STUDENTS=98;
+
+    }
+    public Student(String name,int age){
+        this.name=name;
+        this.age=age;
+        MAX_STUDENTS=67;
+
+    }
 
     public String getName() {
         return name;
@@ -18,24 +30,18 @@ public class Student {
         return age;
     }
 
-    public void setAge(int age) throws Exception{
-        if(age<0)
-           throw new Exception("age cant be negative");
+    public void setAge(int age) throws Exception {
 
-        this.age = age;
+            if (age < 0)
+                throw new Exception("age cant be negative");
 
+            this.age = age;
 
-    }
-
-    public Student() {
-
-    }
-    public Student(String name,int age){
-        this.name=name;
-        this.age=age;
 
 
     }
+
+
 
     public void bolneKiPower(String name) {
 
